@@ -1,7 +1,7 @@
 databases:
   - name: pttBeautyDB
     databaseName: pttBeautyDB
-    user: pttd
+    user: pttb
 
 services:
   - type: web
