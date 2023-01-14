@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'ptt_beauty_images.wsgi.application'
 # }
 DATABASES = {
 	    'default': dj_database_url.config(
-	        default=os.environ.get('ELEPHANTSQL_EXTERNAL_DB_URLsudo delete web service pttBeauty-restful '),
+	        default=os.environ.get('ELEPHANTSQL_EXTERNAL_DB_URL'),
 	        conn_max_age=600
 	    )
 	}
