@@ -92,10 +92,11 @@ WSGI_APPLICATION = 'ptt_beauty_images.wsgi.application'
 # }
 DATABASES = {
 	    'default': dj_database_url.config(
-	        default='postgresql://postgres:postgres@localhost/postgres',
+	        default=os.environ.get('ELEPHANTSQL_EXTERNAL_DB_URL'),
 	        conn_max_age=600
 	    )
 	}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
